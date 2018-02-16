@@ -20,15 +20,20 @@ class SmurfForm extends Component {
       "height": height,
     }
 
-    axios.post('http://localhost:3333/smurfs', newSmurf)
+    axios
+    .post('http://localhost:3333/smurfs', newSmurf)
     .then((response) => {
+      console.log(this.state)
       console.log('Response', response);
       this.props.loadSmurfs();
+      this.resetForm();
     })
     .catch((err) => {
       console.error('Error', err)
     })
-    
+  }
+
+  resetForm = () => {
     this.setState({
       name: '',
       age: '',
@@ -62,17 +67,17 @@ class SmurfForm extends Component {
           <input
             onChange={this.updateName}
             placeholder="name"
-            value={this.name}
+            value={this.state.name}
           />
           <input
             onChange={this.updateAge}
             placeholder="age"
-            value={this.age}
+            value={this.state.age}
           />
           <input
             onChange={this.updateHeight}
             placeholder="height"
-            value={this.height}
+            value={this.state.height}
           />
           <button type="submit">Add to the village</button>
         </form>
