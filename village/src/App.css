@@ -1,6 +1,35 @@
+body {
+  background-image: url('./papa_smurf.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid #fff; */
+}
+
 .App {
   text-align: center;
-  background-color: rgb(57, 118, 158);
   padding: 50px;
   color: #fff;
+  border: 25px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(57, 118, 158, 0.2);
+  width: 80%;
+  margin-top: 40px;
+  
+}
+
+.Smurfs > ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Smurf {
+  border: 2px solid #fff;
+  width: 120px;
+  height: auto;
+  padding: 20px;
+  border-radius: 1%;
+  margin: 5px;
+  background-color: rgba(57, 118, 158, 0.6);
 }
