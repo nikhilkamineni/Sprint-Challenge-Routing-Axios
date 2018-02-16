@@ -5,14 +5,15 @@ body {
   background-size: 100%;
   display: flex;
   justify-content: center;
-  /* border: 3px solid #fff; */
+  font-family: Genava;
 }
 
 .App {
   text-align: center;
   padding: 50px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.815);
   border: 25px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1%;
   background-color: rgba(57, 118, 158, 0.2);
   width: 80%;
   margin-top: 40px;
@@ -25,11 +26,12 @@ body {
 }
 
 .Smurf {
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5%;
   width: 120px;
   height: auto;
   padding: 20px;
-  border-radius: 1%;
+  border-radius: 2%;
   margin: 5px;
   background-color: rgba(57, 118, 158, 0.6);
 }
