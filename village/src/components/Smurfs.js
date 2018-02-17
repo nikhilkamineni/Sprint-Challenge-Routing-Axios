@@ -3,16 +3,12 @@ import React, { Component } from 'react';
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
-  state = {
-    deleteId: ''
-  }
-
   render() {
+    console.log(this.props.smurfs.length)
     return (
       <div className="Smurfs">
-        <h1>Smurf Village</h1>
+      {this.props.smurfs.length !== 0 && <h1>Smurf Village</h1>}
         {this.props.loading && <div>Loading...</div>}
-
         {!this.props.loading && (
           <ul>
             { this.props.smurfs.map((smurf, i) => {

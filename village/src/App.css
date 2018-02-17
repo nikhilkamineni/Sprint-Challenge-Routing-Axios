@@ -17,12 +17,14 @@ body {
   background-color: rgba(57, 118, 158, 0.2);
   width: 80%;
   margin-top: 40px;
-  
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .Smurfs > ul {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .Smurf {
